@@ -8,7 +8,7 @@ import {
 } from 'react-icons/md';
 
 import { ChatContext } from '../context/chatContext';
-import bot from '../assets/logo.svg';
+import bot from '../assets/bot.ico';
 import ToggleTheme from './ToggleTheme';
 import Modal from './Modal';
 import Setting from './Setting';
@@ -45,7 +45,7 @@ const SideBar = () => {
           className={` ${!open && 'scale-0 hidden'
             } flex flex-row items-center gap-2 mx-auto w-full`}>
           <img src={bot} alt='logo' className='w-6 h-6' />
-          <h1 className={` ${!open && 'scale-0 hidden'}`}>KSIT GPT</h1>
+          <h1 className={` ${!open && 'scale-0 hidden'}`}>Colloqui GPT</h1>
         </div>
         <div
           className='mx-auto btn btn-square btn-ghost'

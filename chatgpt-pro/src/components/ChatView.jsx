@@ -10,7 +10,7 @@ import Modal from './Modal';
 import Setting from './Setting';
 
 const options = ['ChatGPT', 'DALL·E'];
-const gptModel = ['gpt-3.5-turbo', 'gpt-4'];
+const gptModel = ['gpt-3.5-turbo'];
 const template = [
   {
     title: 'Basic Java Interviw Questions',
@@ -28,6 +28,7 @@ const template = [
     title: 'What is recursion?',
     prompt: 'What is recursion? show me an example in python.',
   },
+  
 ];
 
 /**
@@ -141,11 +142,7 @@ const ChatView = () => {
           className={`${gpt == gptModel[0] && 'tab-active'} tab`}>
           GPT-3.5
         </a>
-        <a
-          onClick={() => setGpt(gptModel[1])}
-          className={`${gpt == gptModel[1] && 'tab-active'} tab`}>
-          GPT-4
-        </a>
+       
       </div>
 
       <section className='flex flex-col flex-grow w-full px-4 overflow-y-scroll sm:px-10 md:px-32'>
